@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Example Deploy') {
             when {
-                expression {return env.BRANCH_NAME ==~ /(feature\/*)/}
+                expression {return env.BRANCH_NAME ==~ /(feature\/C1)/}
             }
             steps {
                 echo "'${env.BRANCH_NAME}'"
